@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poshan Niraula - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7bda834848.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">Poshan Niraula</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publications" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle" onclick="themeManager.toggle()">
+                        <i class="fas fa-sun" id="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="parallax-layer" data-speed="0.3"></div>
+            <div class="parallax-layer" data-speed="0.6"></div>
+            <div class="hero-bg-image"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-text">Explorer • Creator • Storyteller</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hello, I'm</span>
+                    <span class="title-name">Poshan Niraula</span>
+                </h1>
+                <p class="hero-subtitle">Exploring My Passions</p>
+                <p class="hero-description">
+                    I am passionate about web designing and graphic designing, where creativity meets technology. 
+                    I also enjoy traveling, exploring the mysteries of the universe, and constantly searching for new knowledge. 
+                    Additionally, writing articles allows me to share my thoughts and discoveries with others.
+                </p>
+                <div class="hero-cta">
+                    <a href="#about" class="cta-primary btn-pulse">
+                        <span>Discover My Journey</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#gallery" class="cta-secondary">
+                        <span>View Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-main-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face" alt="Poshan Niraula" class="profile-image">
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="floating-images">
+                        <div class="floating-img floating-img-1">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=250&fit=crop" alt="Mountain Adventure">
+                        </div>
+                        <div class="floating-img floating-img-2">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=180&h=220&fit=crop" alt="Writing Journey">
+                        </div>
+                        <div class="floating-img floating-img-3">
+                            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=160&h=200&fit=crop" alt="Creative Design">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A journey through creativity, exploration, and meaningful connections</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-section scale-in">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Poshan Niraula - About" class="about-profile-img">
+                        <div class="about-image-overlay">
+                            <div class="experience-badge">
+                                <span class="badge-number">5+</span>
+                                <span class="badge-label">Years of Exploration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-gallery-mini">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=150&h=100&fit=crop" alt="Travel Memory" class="mini-img">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=150&h=100&fit=crop" alt="Design Work" class="mini-img">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150&h=100&fit=crop" alt="Mountain View" class="mini-img">
+                    </div>
+                </div>
+                <div class="about-text-section slide-up">
+                    <div class="about-story">
+                        <h3 class="story-title">My Story</h3>
+                        <p class="story-text">
+                            Every journey begins with curiosity, and mine started with a fascination for how creativity 
+                            can transform ideas into meaningful experiences. From designing digital landscapes to exploring 
+                            physical ones, I believe in the power of storytelling through multiple mediums.
+                        </p>
+                    </div>
+                    <div class="about-passions">
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=80&h=80&fit=crop" alt="Web Design">
+                            </div>
+                            <div class="passion-content">
+                                <h4>Creative Design</h4>
+                                <p>Crafting digital experiences that blend aesthetics with functionality</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=80&h=80&fit=crop" alt="Travel">
+                            </div>
+                            <div class="passion-content">
+                                <h4>Travel & Exploration</h4>
+                                <p>Discovering new cultures and landscapes that inspire my creative work</p>
+                            </div>
+                        </div>
+                        <div class="passion-item">
+                            <div class="passion-icon">
+                                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=80&h=80&fit=crop" alt="Writing">
+                            </div>
+                            <div class="passion-content">
+                                <h4>Storytelling</h4>
+                                <p>Sharing insights and experiences through thoughtful writing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-memories">
+                <div class="memory-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop" alt="Mountain Adventure" class="memory-img">
+                    <div class="memory-content">
+                        <h4>Mountain Adventures</h4>
+                        <p>Exploring the Himalayas and finding inspiration in nature's grandeur</p>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=300&h=200&fit=crop" alt="City Exploration" class="memory-img">
+                    <div class="memory-content">
+                        <h4>Urban Discoveries</h4>
+                        <p>Capturing the essence of different cities and their unique stories</p>
+                    </div>
+                </div>
+                <div class="memory-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop" alt="Nature Walks" class="memory-img">
+                    <div class="memory-content">
+                        <h4>Nature Connections</h4>
+                        <p>Finding peace and creativity in the quiet moments with nature</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Explore</h2>
+                <p class="section-subtitle">Journey through my passions and discoveries</p>
+            </div>
+            <div class="explore-grid" id="explore-grid">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">Thoughts, insights, and discoveries</p>
+            </div>
+            <div class="publications-grid" id="publications-grid">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Capturing moments and memories</p>
+            </div>
+            <div class="gallery-filters slide-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Poshan Niraula</h3>
+                    <p>Sharing personal insights, travel experiences, and memorable moments through creativity and exploration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/poshansir" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/poshansir/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@p.o.s.h.a.n" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@poshanniraula5889" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Journey</h4>
+                    <p>Every experience is a story worth sharing. Let's connect and explore the world together!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Poshan Niraula. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- No admin panel needed for static deployment -->
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="image-modal">
+        <span class="image-modal-close">&times;</span>
+        <img class="image-modal-content" id="modal-image">
+        <div class="image-modal-caption">
+            <h3 id="image-modal-title"></h3>
+        </div>
+    </div>
+
+    <!-- Publication Modal -->
+    <div class="publication-modal" id="publication-modal">
+        <div class="publication-modal-backdrop"></div>
+        <div class="publication-modal-content">
+            <div class="publication-modal-header">
+                <button class="publication-modal-close" id="publication-modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="publication-modal-body">
+                <div class="publication-modal-image">
+                    <img id="publication-modal-img" alt="">
+                </div>
+                <div class="publication-modal-text">
+                    <div class="publication-modal-meta">
+                        <span class="publication-modal-date" id="publication-modal-date"></span>
+                        <span class="publication-modal-category" id="publication-modal-category">Article</span>
+                    </div>
+                    <h1 class="publication-modal-title" id="publication-modal-title"></h1>
+                    <p class="publication-modal-excerpt" id="publication-modal-excerpt"></p>
+                    <div class="publication-modal-content-text" id="publication-modal-content"></div>
+                    <div class="publication-modal-footer">
+                        <div class="publication-modal-share">
+                            <span>Share this article:</span>
+                            <div class="share-buttons">
+                                <button class="share-btn x-twitter" onclick="sharePublication('x')">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </button>
+                                <button class="share-btn facebook" onclick="sharePublication('facebook')">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="share-btn linkedin" onclick="sharePublication('linkedin')">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                                <button class="share-btn copy" onclick="copyPublicationLink()">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
