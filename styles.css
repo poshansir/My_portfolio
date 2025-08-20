@@ -1010,8 +1010,9 @@ section#home {
     padding: 1rem;
 }
 
+
 .publication-item:hover .publication-overlay {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .publication-tags {
