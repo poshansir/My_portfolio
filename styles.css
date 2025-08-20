@@ -80,7 +80,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 50px;
 }
 
 .nav-logo {
@@ -466,7 +466,7 @@ body {
 /* Section Styles */
 section {
     padding: 100px 0 60px;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 50px;
 }
 
 section#home {
@@ -1927,7 +1927,7 @@ section#home {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 50px;
         flex-direction: column;
         background: var(--background-color);
         width: 100%;
