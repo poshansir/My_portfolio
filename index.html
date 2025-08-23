@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poshan Niraula - Portfolio</title>
+    <link rel="icon" type="image/png" href="./Photos/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,9 +26,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#explore" class="nav-link">Explore</a>
                 </li>
                 <li class="nav-item">
                     <a href="#publications" class="nav-link">Publications</a>
@@ -85,7 +83,7 @@
             <div class="hero-visual">
                 <div class="hero-image-container">
                     <div class="hero-main-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face" alt="Poshan Niraula" class="profile-image">
+                        <img src="./Photos/main image.jpg" alt="Poshan Niraula" class="profile-image">
                         <div class="image-glow"></div>
                     </div>
                     <div class="floating-images">
@@ -120,7 +118,7 @@
             <div class="about-content">
                 <div class="about-image-section scale-in">
                     <div class="about-main-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Poshan Niraula - About" class="about-profile-img">
+                        <img src="./Photos/body.jpg" alt="Poshan Niraula - About" class="about-profile-img">
                         <div class="about-image-overlay">
                             <div class="experience-badge">
                                 <span class="badge-number">5+</span>
@@ -143,72 +141,96 @@
                             physical ones, I believe in the power of storytelling through multiple mediums.
                         </p>
                     </div>
+                    
                     <div class="about-passions">
-                        <div class="passion-item">
-                            <div class="passion-icon">
-                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=80&h=80&fit=crop" alt="Web Design">
+                        <div class="passions-header">
+                            <h3 class="passions-title">My Passions</h3>
+                            <p class="passions-subtitle">The driving forces behind my creative journey</p>
+                        </div>
+                        
+                        <div class="passions-grid">
+                            <div class="passion-card">
+                                <div class="passion-card-header">
+                                    <div class="passion-icon-large">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="passion-card-header-text">
+                                        <h4 class="passion-card-title">Web Design</h4>
+                                        <p class="passion-card-subtitle">Frontend Development</p>
+                                    </div>
+                                </div>
+                                <div class="passion-card-body">
+                                    <p class="passion-card-description">Building responsive websites with modern design principles.</p>
+                                    <div class="passion-card-features">
+                                        <span class="feature-tag">HTML/CSS</span>
+                                        <span class="feature-tag">Responsive</span>
+                                        <span class="feature-tag">UI/UX</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="passion-content">
-                                <h4>Creative Design</h4>
-                                <p>Crafting digital experiences that blend aesthetics with functionality</p>
+                            
+                            <div class="passion-card">
+                                <div class="passion-card-header">
+                                    <div class="passion-icon-large">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="passion-card-header-text">
+                                        <h4 class="passion-card-title">Graphic Design</h4>
+                                        <p class="passion-card-subtitle">Visual Communication</p>
+                                    </div>
+                                </div>
+                                <div class="passion-card-body">
+                                    <p class="passion-card-description">Creating visual identities and impactful graphics.</p>
+                                    <div class="passion-card-features">
+                                        <span class="feature-tag">Branding</span>
+                                        <span class="feature-tag">Logos</span>
+                                        <span class="feature-tag">Print</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="passion-card">
+                                <div class="passion-card-header">
+                                    <div class="passion-icon-large">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                    <div class="passion-card-header-text">
+                                        <h4 class="passion-card-title">Adventure</h4>
+                                        <p class="passion-card-subtitle">Outdoor Exploration</p>
+                                    </div>
+                                </div>
+                                <div class="passion-card-body">
+                                    <p class="passion-card-description">Exploring trails and documenting natural landscapes.</p>
+                                    <div class="passion-card-features">
+                                        <span class="feature-tag">Hiking</span>
+                                        <span class="feature-tag">Photography</span>
+                                        <span class="feature-tag">Travel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="passion-card">
+                                <div class="passion-card-header">
+                                    <div class="passion-icon-large">
+                                        <i class="fas fa-pen"></i>
+                                    </div>
+                                    <div class="passion-card-header-text">
+                                        <h4 class="passion-card-title">Writing</h4>
+                                        <p class="passion-card-subtitle">Content Creation</p>
+                                    </div>
+                                </div>
+                                <div class="passion-card-body">
+                                    <p class="passion-card-description">Research-based articles that inform and inspire.</p>
+                                    <div class="passion-card-features">
+                                        <span class="feature-tag">Articles</span>
+                                        <span class="feature-tag">Research</span>
+                                        <span class="feature-tag">Analysis</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="passion-item">
-                            <div class="passion-icon">
-                                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=80&h=80&fit=crop" alt="Travel">
-                            </div>
-                            <div class="passion-content">
-                                <h4>Travel & Exploration</h4>
-                                <p>Discovering new cultures and landscapes that inspire my creative work</p>
-                            </div>
-                        </div>
-                        <div class="passion-item">
-                            <div class="passion-icon">
-                                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=80&h=80&fit=crop" alt="Writing">
-                            </div>
-                            <div class="passion-content">
-                                <h4>Storytelling</h4>
-                                <p>Sharing insights and experiences through thoughtful writing</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="about-memories">
-                <div class="memory-card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop" alt="Mountain Adventure" class="memory-img">
-                    <div class="memory-content">
-                        <h4>Mountain Adventures</h4>
-                        <p>Exploring the Himalayas and finding inspiration in nature's grandeur</p>
-                    </div>
-                </div>
-                <div class="memory-card">
-                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=300&h=200&fit=crop" alt="City Exploration" class="memory-img">
-                    <div class="memory-content">
-                        <h4>Urban Discoveries</h4>
-                        <p>Capturing the essence of different cities and their unique stories</p>
-                    </div>
-                </div>
-                <div class="memory-card">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop" alt="Nature Walks" class="memory-img">
-                    <div class="memory-content">
-                        <h4>Nature Connections</h4>
-                        <p>Finding peace and creativity in the quiet moments with nature</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Explore Section -->
-    <section id="explore" class="explore">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Explore</h2>
-                <p class="section-subtitle">Journey through my passions and discoveries</p>
-            </div>
-            <div class="explore-grid" id="explore-grid">
-                <!-- Dynamic content will be loaded here -->
             </div>
         </div>
     </section>
@@ -218,10 +240,38 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2 class="section-title">Publications</h2>
-                <p class="section-subtitle">Thoughts, insights, and discoveries</p>
+                <p class="section-subtitle">Research articles and academic publications</p>
             </div>
-            <div class="publications-grid" id="publications-grid">
-                <!-- Dynamic content will be loaded here -->
+            <div class="publications-grid">
+                <div class="publication-card" onclick="openPDFModal('trading')">
+                    <div class="publication-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">How to Start Trading Shares</h3>
+                        <p class="publication-author">Poshan Niraula</p>
+                        <p class="publication-journal">Shweta Shardul, Vol 20</p>
+                        <p class="publication-excerpt">A comprehensive guide for beginners entering the stock market, covering fundamental concepts and practical strategies.</p>
+                        <button class="read-article-btn">
+                            <i class="fas fa-file-pdf"></i> READ ARTICLE
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="publication-card" onclick="openPDFModal('mathematics')">
+                    <div class="publication-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Problems Faced by Mathematics Students in Secondary Level</h3>
+                        <p class="publication-author">Poshan Niraula</p>
+                        <p class="publication-journal">Shweta Shardul, Vol XVIII</p>
+                        <p class="publication-excerpt">An analysis of challenges encountered by secondary level students in mathematics education and potential solutions.</p>
+                        <button class="read-article-btn">
+                            <i class="fas fa-file-pdf"></i> READ ARTICLE
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -236,7 +286,7 @@
             <div class="gallery-filters slide-up">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="travel">Travel</button>
-                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="design">Chill</button>
                 <button class="filter-btn" data-filter="nature">Nature</button>
             </div>
             <div class="gallery-grid" id="gallery-grid">
@@ -292,45 +342,43 @@
         </div>
     </div>
 
-    <!-- Publication Modal -->
-    <div class="publication-modal" id="publication-modal">
-        <div class="publication-modal-backdrop"></div>
-        <div class="publication-modal-content">
-            <div class="publication-modal-header">
-                <button class="publication-modal-close" id="publication-modal-close">
+    <!-- PDF Modal -->
+    <div class="pdf-modal" id="pdf-modal">
+        <div class="pdf-modal-backdrop" onclick="closePDFModal()"></div>
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <div class="pdf-modal-info">
+                    <h3 class="pdf-modal-title" id="pdf-modal-title"></h3>
+                    <p class="pdf-modal-author" id="pdf-modal-author"></p>
+                </div>
+                <button class="pdf-modal-close" onclick="closePDFModal()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="publication-modal-body">
-                <div class="publication-modal-image">
-                    <img id="publication-modal-img" alt="">
+            <div class="pdf-modal-body">
+                <div class="pdf-viewer-container">
+                    <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
                 </div>
-                <div class="publication-modal-text">
-                    <div class="publication-modal-meta">
-                        <span class="publication-modal-date" id="publication-modal-date"></span>
-                        <span class="publication-modal-category" id="publication-modal-category">Article</span>
-                    </div>
-                    <h1 class="publication-modal-title" id="publication-modal-title"></h1>
-                    <p class="publication-modal-excerpt" id="publication-modal-excerpt"></p>
-                    <div class="publication-modal-content-text" id="publication-modal-content"></div>
-                    <div class="publication-modal-footer">
-                        <div class="publication-modal-share">
-                            <span>Share this article:</span>
-                            <div class="share-buttons">
-                                <button class="share-btn x-twitter" onclick="sharePublication('x')">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </button>
-                                <button class="share-btn facebook" onclick="sharePublication('facebook')">
-                                    <i class="fab fa-facebook-f"></i>
-                                </button>
-                                <button class="share-btn linkedin" onclick="sharePublication('linkedin')">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </button>
-                                <button class="share-btn copy" onclick="copyPublicationLink()">
-                                    <i class="fas fa-link"></i>
-                                </button>
-                            </div>
-                        </div>
+            </div>
+            <div class="pdf-modal-footer">
+                <button class="pdf-download-btn" id="pdf-download-btn">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <div class="pdf-modal-share">
+                    <span>Share:</span>
+                    <div class="share-buttons">
+                        <button class="share-btn facebook" onclick="sharePDF('facebook')">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="share-btn twitter" onclick="sharePDF('twitter')">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-btn linkedin" onclick="sharePDF('linkedin')">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                        <button class="share-btn copy" onclick="copyPDFLink()">
+                            <i class="fas fa-link"></i>
+                        </button>
                     </div>
                 </div>
             </div>

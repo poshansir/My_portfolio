@@ -179,75 +179,99 @@ class ContentManager {
             gallery: [
                 {
                     id: 1,
-                    title: "Sunrise at Everest Base Camp",
-                    image: "https://images.unsplash.com/photo-1464822759844-d150baec0494?w=400&h=600&fit=crop",
-                    category: "travel"
+                    title: "Portrait Session",
+                    image: "./Photos/body.jpg",
+                    category: "design"
                 },
                 {
                     id: 2,
-                    title: "Market Colors in Kathmandu",
-                    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=500&fit=crop",
-                    category: "travel"
+                    title: "Cover Photo",
+                    image: "./Photos/cover-photo1.jpg",
+                    category: "design"
                 },
                 {
                     id: 3,
-                    title: "Peaceful Forest Trail",
-                    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=700&fit=crop",
-                    category: "nature"
+                    title: "WhatsApp Memories",
+                    image: "./Photos/IMG-20250315-WA0187.jpg",
+                    category: "travel"
                 },
                 {
                     id: 4,
-                    title: "Night Lights of Pokhara",
-                    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=400&h=450&fit=crop",
+                    title: "February 2024",
+                    image: "./Photos/IMG20240214191810.jpg",
                     category: "travel"
                 },
                 {
                     id: 5,
-                    title: "Morning Reflection",
-                    image: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=550&fit=crop",
-                    category: "nature"
+                    title: "April Adventures",
+                    image: "./Photos/IMG20240413105020.jpg",
+                    category: "travel"
                 },
                 {
                     id: 6,
-                    title: "Design Inspiration Board",
-                    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=650&fit=crop",
-                    category: "design"
+                    title: "June Moments",
+                    image: "./Photos/IMG20240615181053.jpg",
+                    category: "travel"
                 },
                 {
                     id: 7,
-                    title: "Mountain Landscape",
-                    image: "https://images.unsplash.com/photo-1506762338491-caa7b116c963?w=400&h=480&fit=crop",
+                    title: "August Journey",
+                    image: "./Photos/IMG20240803102738.jpg",
                     category: "nature"
                 },
                 {
                     id: 8,
-                    title: "Creative Workspace",
-                    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=580&fit=crop",
-                    category: "design"
+                    title: "Christmas 2024",
+                    image: "./Photos/IMG20241225102533.jpg",
+                    category: "travel"
                 },
                 {
                     id: 9,
-                    title: "Travel Photography",
-                    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=520&fit=crop",
+                    title: "April 2025",
+                    image: "./Photos/IMG20250405161626.jpg",
                     category: "travel"
                 },
                 {
                     id: 10,
-                    title: "Misty Mountains",
-                    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=680&fit=crop",
+                    title: "May Exploration",
+                    image: "./Photos/IMG20250528174918.jpg",
                     category: "nature"
                 },
                 {
                     id: 11,
-                    title: "Urban Architecture",
-                    image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=450&fit=crop",
-                    category: "design"
+                    title: "June Adventures",
+                    image: "./Photos/IMG20250621091450.jpg",
+                    category: "travel"
                 },
                 {
                     id: 12,
-                    title: "Desert Sunrise",
-                    image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=600&fit=crop",
+                    title: "March 2023",
+                    image: "./Photos/IMG_20230305_165652.jpg",
                     category: "travel"
+                },
+                {
+                    id: 13,
+                    title: "March 2025",
+                    image: "./Photos/IMG_20250317_184541.jpg",
+                    category: "nature"
+                },
+                {
+                    id: 14,
+                    title: "April Morning",
+                    image: "./Photos/IMG_20250406_092224.jpg",
+                    category: "travel"
+                },
+                {
+                    id: 15,
+                    title: "Special Capture",
+                    image: "./Photos/IMG_E7138.jpg",
+                    category: "travel"
+                },
+                {
+                    id: 16,
+                    title: "Main Portrait",
+                    image: "./Photos/main image.jpg",
+                    category: "design"
                 }
             ]
         };
@@ -682,6 +706,125 @@ function showCopyNotification(message) {
         }
     }, 3000);
 }
+
+// PDF Modal Functions
+function openPDFModal(publicationType) {
+    const publications = {
+        'trading': {
+            title: 'How to Start Trading Shares',
+            author: 'Poshan Niraula',
+            pdf: './Publications/How to Start Trading Shares - Poshan Niraula - Shweta Shardul, Vol 20.pdf'
+        },
+        'mathematics': {
+            title: 'Problems Faced by Mathematics Students in Secondary Level',
+            author: 'Poshan Niraula', 
+            pdf: './Publications/Problems Faced by Mathematics Students in Secondary Level - Poshan Niraula - Shweta Shardul Vol XVIII.pdf'
+        }
+    };
+
+    const publication = publications[publicationType];
+    if (!publication) return;
+
+    const modal = document.getElementById('pdf-modal');
+    const pdfViewer = document.getElementById('pdf-viewer');
+    const modalTitle = document.getElementById('pdf-modal-title');
+    const modalAuthor = document.getElementById('pdf-modal-author');
+    const downloadBtn = document.getElementById('pdf-download-btn');
+
+    if (modalTitle) modalTitle.textContent = publication.title;
+    if (modalAuthor) modalAuthor.textContent = publication.author;
+    if (pdfViewer) pdfViewer.src = publication.pdf;
+    
+    if (downloadBtn) {
+        downloadBtn.onclick = function() {
+            const link = document.createElement('a');
+            link.href = publication.pdf;
+            link.download = publication.title + '.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePDFModal() {
+    const modal = document.getElementById('pdf-modal');
+    const pdfViewer = document.getElementById('pdf-viewer');
+    
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+    
+    // Clear PDF source to stop loading
+    if (pdfViewer) {
+        pdfViewer.src = '';
+    }
+}
+
+function sharePDF(platform) {
+    const title = document.getElementById('pdf-modal-title')?.textContent || 'Check out this publication';
+    const author = document.getElementById('pdf-modal-author')?.textContent || '';
+    const url = window.location.href;
+    
+    let shareUrl = '';
+    
+    switch(platform) {
+        case 'twitter':
+            shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title + ' by ' + author)}&url=${encodeURIComponent(url)}`;
+            break;
+        case 'facebook':
+            shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(title + ' by ' + author)}`;
+            break;
+        case 'linkedin':
+            shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent('By ' + author)}`;
+            break;
+        default:
+            console.log('Unknown platform:', platform);
+            return;
+    }
+    
+    // Open in new window
+    const width = 600;
+    const height = 400;
+    const left = (window.innerWidth - width) / 2;
+    const top = (window.innerHeight - height) / 2;
+    
+    window.open(
+        shareUrl, 
+        'shareWindow', 
+        `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
+    );
+}
+
+function copyPDFLink() {
+    const url = window.location.href;
+    const title = document.getElementById('pdf-modal-title')?.textContent || 'Publication';
+    
+    navigator.clipboard.writeText(url).then(() => {
+        showNotification(`Link to "${title}" copied to clipboard!`);
+    }).catch(() => {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        showNotification(`Link to "${title}" copied to clipboard!`);
+    });
+}
+
+// ESC key handler for PDF modal
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const pdfModal = document.getElementById('pdf-modal');
+        if (pdfModal && pdfModal.classList.contains('active')) {
+            closePDFModal();
+        }
+    }
+});
 
 // Initialize everything
 let themeManager, navigationManager, contentManager;
