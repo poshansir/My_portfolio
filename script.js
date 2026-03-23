@@ -272,6 +272,12 @@ class ContentManager {
                     title: "Main Portrait",
                     image: "./Photos/main image.jpg",
                     category: "design"
+                },
+                 {
+                    id: 17,
+                    title: "Kusheshwor",
+                    image: "./Photos/IMG_3982.HEIC",
+                    category: "travel"
                 }
             ]
         };
