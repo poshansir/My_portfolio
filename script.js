@@ -276,7 +276,7 @@ class ContentManager {
                  {
                     id: 17,
                     title: "Kusheshwor",
-                    image: "./Photos/IMG_3982.HEIC",
+                    image: "./Photos/IMG_3982.jpg",
                     category: "travel"
                 }
             ]
