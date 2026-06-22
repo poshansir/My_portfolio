@@ -716,6 +716,11 @@ function showCopyNotification(message) {
 // PDF Modal Functions
 function openPDFModal(publicationType) {
     const publications = {
+       'emis': {
+            title: 'शैक्षिक प्रशासनको गुणस्तर सुधारमा शिक्षा व्यवस्थापन सूचना प्रणालीको भूमिका',
+            author: 'पोषण निरौला',
+            pdf: './Publications/पोषण निरौला_शैक्षिक प्रशासनको गुणस्तर सुधारमा शिक्षा व्यवस्थापन सूचना प्रणालीको भूमिका.pdf'
+        },
         'trading': {
             title: 'How to Start Trading Shares',
             author: 'Poshan Niraula',
